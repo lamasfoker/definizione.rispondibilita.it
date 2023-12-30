@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definizione - Rispondibilità</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #F5F5F5;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .audio-button {
+            display: inline-block;
+            background-color: #2196F3;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .audio-button:hover {
+            background-color: #1976D2;
+        }
+
+        .audio-button i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Rispondibilità</h1>
+    <p>
+        Rispondibilità implica che gli individui o le organizzazioni debbano essere trasparenti e responsabili delle proprie azioni, in modo che possano essere valutati, giudicati o chiamati a rispondere per eventuali errori o comportamenti impropri.
+    </p>
+    <p>
+        Rispondibilità è spesso considerata un elemento chiave della governance e della gestione responsabile, sia nel contesto delle organizzazioni che in quello delle istituzioni pubbliche. Promuove la trasparenza, la fiducia e l'integrità, e può essere applicata a vari ambiti, come la politica, l'amministrazione pubblica, gli affari aziendali e le relazioni personali.
+    </p>
+    <p>
+        Questo sito nasce per rispondere a un'esigenza semplice, dare una traduzione italiana dell'aggettivo inglese <strong>
+        "Accountability"</strong>. La modifica del linguaggio ha il potenziale di influenzare sia il comportamento che il pensiero delle persone.
+    </p>
+    <p>
+        Il progetto è nato dopo aver ascoltato l'introduzione di Francesco Costa, giornalista de <strong>il Post</strong>, nella puntata 614 del suo podcast giornaliero "Morning".
+    </p>
+    <span style="display: flex; justify-content: center">
+        <button class="audio-button" onclick="toggleAudio()">
+            <span id="audioLabel">Play</span>
+        </button>
+    </span>
+    <audio id="audioPlayer" src="https://www.ilpost.it/wp-content/uploads/2023/12/06/1701846652-34646612-morning-6-12.mp3"></audio>
+    <script>
+        var audio = document.getElementById("audioPlayer");
+        var audioLabel = document.getElementById("audioLabel");
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                audioLabel.textContent = "Pause";
+            } else {
+                audio.pause();
+                audioLabel.textContent = "Play";
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
